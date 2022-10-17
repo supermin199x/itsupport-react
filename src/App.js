@@ -1,25 +1,40 @@
-import logo from './logo.svg';
 import './App.css';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import { LoginForm } from './components/LoginForm';
+import { Error404 } from './pages/Error404';
+import { ListCctv } from './pages/ListCctv';
+import { ListComputer } from './pages/ListComputer';
+import { ListJob } from './pages/ListJob';
+import { ListManual } from './pages/ListManual';
+import { ListNetwork } from './pages/ListNetwork';
+import { ListPrinter } from './pages/ListPrinter';
+import { ListSpare } from './pages/ListSpare';
+import { ListUps } from './pages/ListUps';
+import { ReportJob } from './pages/ReportJob';
+
+
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+	return (
+		<>
+			<BrowserRouter>
+				<Routes>
+					<Route path='/' element={<LoginForm />} />
+					<Route index path='/' element={<LoginForm />} />
+					<Route path='*' element={<Error404 />} />
+					<Route path='listcctv' element={<ListCctv />} />
+					<Route path='listComputer' element={<ListComputer />} />
+					<Route path='listJob' element={<ListJob />} />
+					<Route path='listManual' element={<ListManual />} />
+					<Route path='listNetwork' element={<ListNetwork />} />
+					<Route path='listPrinter' element={<ListPrinter />} />
+					<Route path='listSpare' element={<ListSpare />} />
+					<Route path='listUps' element={<ListUps />} />
+					<Route path='reportJob' element={<ReportJob />} />
+				</Routes>
+			</BrowserRouter>
+		</>
+	);
 }
 
 export default App;
