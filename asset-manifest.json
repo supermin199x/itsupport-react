@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/itsupport-react/static/css/main.e4312170.css",
+    "main.js": "/itsupport-react/static/js/main.2146c243.js",
+    "static/media/cctv.png": "/itsupport-react/static/media/cctv.200fd66311510db96617.png",
+    "static/media/list.png": "/itsupport-react/static/media/list.b87a8ab110e5d80c8a06.png",
+    "static/media/manual.png": "/itsupport-react/static/media/manual.9e31355c6d9b1f8b50c5.png",
+    "static/media/spare.png": "/itsupport-react/static/media/spare.79f8ebe3cfd5e31a0467.png",
+    "static/media/logout.png": "/itsupport-react/static/media/logout.d0374bb9108b41d82c0a.png",
+    "static/media/report.png": "/itsupport-react/static/media/report.cd49ef1880dccc6b4e22.png",
+    "static/media/ups.png": "/itsupport-react/static/media/ups.3c6755ceff3e2858cbeb.png",
+    "static/media/printer.png": "/itsupport-react/static/media/printer.d7317fe45aec360a749b.png",
+    "static/media/network.png": "/itsupport-react/static/media/network.060b1ee145b765601332.png",
+    "index.html": "/itsupport-react/index.html",
+    "main.e4312170.css.map": "/itsupport-react/static/css/main.e4312170.css.map",
+    "main.2146c243.js.map": "/itsupport-react/static/js/main.2146c243.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.e4312170.css",
+    "static/js/main.2146c243.js"
+  ]
+}
