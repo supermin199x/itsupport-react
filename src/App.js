@@ -12,8 +12,6 @@ import { ListSpare } from './pages/ListSpare';
 import { ListUps } from './pages/ListUps';
 import { ReportJob } from './pages/ReportJob';
 
-
-
 function App() {
 	return (
 		<>
