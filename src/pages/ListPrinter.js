@@ -6,16 +6,17 @@ import axios from 'axios';
 
 const ContainerPrinter = styled.div`
     width: 100%;
-    height: 500px;
+    height: fit-content;
     overflow-x: hidden;
     overflow-y: scroll;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    row-gap: 10px;
-    column-gap: 10px;
+    row-gap: 20px;
+    column-gap: 2%;
     padding: 20px;
-    border: solid 1px gray;
+    border: solid 1px lightgray;
+    border-radius: 3px;
 `
 const Title = styled.td`
     font-size: 24px;
@@ -24,14 +25,26 @@ const Title = styled.td`
     margin-bottom: 20px;
 `
 const Box = styled.div`
-    width: 24%;
-    height: 50px;
+    width: 18.40%;
+    height: fit-content;
     display: flex;
+    flex-direction: column;
     align-items: center;
+    justify-content: center;
     border-radius: 3px;
     padding: 20px;
     box-shadow: 0px 0px 3px black;
     font-size: 12px;
+    font-weight: bold;
+    :hover {
+        cursor: pointer;
+        background-color: lightgray;
+        color: white;
+    }
+`
+export const Img = styled.img`
+    width: 100px;
+    height: 100px;
 `
 
 export const ListPrinter = () => {
@@ -58,10 +71,11 @@ export const ListPrinter = () => {
             <CanvasRow>
                 <Sidebar />
                 <CanvasContent>
-                    <Title>เครื่องคอมพิวเตอร์</Title>
+                    <Title>เครื่องปริ้นเตอร์</Title>
                     <ContainerPrinter>
                         {data.users.map((item) => {
                             return <Box>
+                                <Img src={ require('../images/HLL2360DW.png') } alt=''/>
                                 <p>{item.printer_name}</p>
                             </Box>
                         })}

@@ -18,7 +18,7 @@ function App() {
 			<BrowserRouter>
 				<Routes>
 					<Route path='/' element={<LoginForm />} />
-					<Route index path='/' element={<LoginForm />} />
+					<Route index path='/itsupport-react' element={<LoginForm />} />
 					<Route path='*' element={<Error404 />} />
 					<Route path='listcctv' element={<ListCctv />} />
 					<Route path='listComputer' element={<ListComputer />} />

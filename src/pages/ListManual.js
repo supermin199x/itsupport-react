@@ -8,7 +8,7 @@ export const ListManual = () => {
         window.open(url, '_blank', 'noopener,noreferrer');
     };
 
-    const url = 'http://localhost:8080/reportexample/frmPo.aspx?po_id=';
+    const url = 'http://localhost:8080/reportcomputer/frmReportComputer?computer_id=';
     const [id, setId] = useState('');
 
     const handleChange = event => {
@@ -21,7 +21,7 @@ export const ListManual = () => {
             <CanvasRow>
                 <Sidebar />
                 <CanvasContent>
-                    <label>PO_ID
+                    <label>COMPUTER_ID 
                         <input type="text" onChange={handleChange} />
                         <p>{id}</p>
                     </label>
